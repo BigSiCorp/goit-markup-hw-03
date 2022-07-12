@@ -15,12 +15,24 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
 }
 
 /* header */
 header {
     background-color: var(--white-color);
 }
+nav > a[href] {
+    display: inline-block;
+    min-width: 145px;
+    }
 .logo {
     color: var(--secondary-text-color);
     font-family: raleway, sans-serif;
@@ -28,7 +40,7 @@ header {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-}
+    }
 .head-part {
     color: #000000;
 }
@@ -72,29 +84,36 @@ header {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 .portfolio-page .subtitle {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     }
 .section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 .section-title,
 .subtitle {
     color: var(--title-text-color);
     font-weight: 700;
+    margin-top: 0;
+    }
+.subtitle {
+    margin-bottom: 10px;
 }
 .advantages .subtitle {
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
-}
+    }
 .team .subtitle {
     font-weight: 500;
 }
@@ -103,6 +122,10 @@ header {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+.section p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .hidden {
     position: absolute;
@@ -116,10 +139,14 @@ header {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.team {
+    padding-top: 94px;
+}
 
 /* sections */
 .hero {
     background-color: #2f303a;
+    text-align: center;
 }
 .team {
     background-color: #f5f4fa;
@@ -134,7 +161,23 @@ header {
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 0;
+    margin-bottom: 0;
     }
+.portfolio-page {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+section {
+    margin-top: 0;
+    margin-bottom: 94px;
+}
+.section.team {
+    margin-bottom: 0;
+}
+.filter {
+    margin-bottom: 34px;
+}
 
 /* buttons */
 .filter-btn.button-main {
@@ -143,6 +186,8 @@ header {
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+    min-width: 200px;
     }
 .filter-btn {
     color: var(--title-text-color);
@@ -155,6 +200,10 @@ header {
     letter-spacing: inherit;
     text-align: center;
     cursor: pointer;
+    border-radius: 4px;
+    border-width: 0;
+    padding: 6px 22px;
+    display: inline-block;
 }
 .filter-btn.current {
     color: #ffffff;
@@ -169,6 +218,12 @@ button:focus {
 /* footer */
 footer {
     background-color: #2f303a;
+    padding-top: 60px;
+}
+footer > .conteiner > a {
+    display: inline-block;
+    min-width: 145px;
+    padding-bottom: 20px;
 }
 .map {
     color: var(--white-color);
@@ -179,7 +234,10 @@ address a {
     line-height: 1.71;
     text-decoration: none;
 }
+address {
+    padding-bottom: 60px;
+}
 .contact:hover,
 .contact:focus {
-        color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
 }
