@@ -29,7 +29,6 @@ ul {
 
 /* header */
 header {
-    background-color: var(--white-color);
     border-bottom: 1px solid #ececec;
 }
 nav > a[href] {
@@ -112,7 +111,6 @@ nav > a[href] {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto 30px;
-    padding-top: 200px;
     width: 696px;
 }
 .portfolio-page .subtitle {
@@ -169,6 +167,7 @@ nav > a[href] {
     background-color: #2f303a;
     text-align: center;
     padding-bottom: 200px;
+    padding-top: 200px;
 }
 .team {
     background-color: #f5f4fa;
