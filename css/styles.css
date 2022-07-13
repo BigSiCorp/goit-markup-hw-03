@@ -49,6 +49,15 @@ nav > a[href] {
 }
 
 /* site-nav*/
+.site-nav {
+    display: flex;
+}
+.site-nav .item {
+    margin-right: 50px;
+}
+.site-nav .item:last-child {
+    margin-right: 0;
+}
 .site-nav a {
     color: var(--title-text-color);
     font-weight: 500;
@@ -127,6 +136,9 @@ nav > a[href] {
     margin-top: 0;
     margin-bottom: 0;
 }
+.section.team p {
+    margin-bottom: 30px;
+}
 .hidden {
     position: absolute;
     width: 1px;
@@ -139,9 +151,7 @@ nav > a[href] {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.team {
-    padding-top: 94px;
-}
+
 
 /* sections */
 .hero {
@@ -150,6 +160,7 @@ nav > a[href] {
 }
 .team {
     background-color: #f5f4fa;
+    padding-top: 94px;
 }
 .section.advantages p {
     line-height: 1.71;
@@ -162,7 +173,7 @@ nav > a[href] {
     font-size: 16px;
     line-height: 1.88;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     }
 .portfolio-page {
     margin-top: 94px;
@@ -177,6 +188,15 @@ section {
 }
 .filter {
     margin-bottom: 34px;
+}
+.team ul {
+    padding-bottom: 94px;
+}
+.team img {
+    margin-bottom: 30px;
+}
+.portfolio-page img {
+    margin-bottom: 20px;
 }
 
 /* buttons */
