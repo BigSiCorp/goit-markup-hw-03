@@ -168,10 +168,7 @@ nav > a[href] {
 .hero {
     background-color: #2f303a;
     text-align: center;
-    padding-bottom: 0;
-}
-.hero .container {
-    height: 600px;
+    padding-bottom: 200px;
 }
 .team {
     background-color: #f5f4fa;
@@ -260,17 +257,12 @@ nav > a[href] {
 .team li {
     padding-bottom: 30px;
 }
-.portfolio-page img {
-    margin-bottom: 20px;
-}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .portfolio-list .item {
-    padding-bottom: 20px;
-    border: 1px solid #eeeeee;
     width: 370px;
     margin-left: 30px;
     margin-bottom: 30px;
@@ -282,7 +274,12 @@ nav > a[href] {
     margin-bottom: 0;
 }
 .card-item {
-    padding: 0 24px;
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+.portfolio-list img {
+    display: block;
 }
 
 /* buttons */
